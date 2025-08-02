@@ -4,7 +4,7 @@ test('Filter Jobs by On Demand employment type', async ({ page }) => {
   
   await page.goto('https://minimals.cc/');
 
-  //Email & password are getting Autofill
+  //Email & password are getting Autofill.
 
   await page.getByRole('link', { name: 'Sign in' }).click();
   await page.getByRole('button', { name: 'Sign in' }).click();
