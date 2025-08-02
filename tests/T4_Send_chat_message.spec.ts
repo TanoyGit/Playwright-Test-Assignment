@@ -3,6 +3,9 @@ import { test, expect } from '@playwright/test';
 test('Send Chat Message to Deja Brady', async ({ page }) => {
 
   await page.goto('https://minimals.cc/');
+
+  //Email & password are getting Autofill
+  
   await page.getByRole('link', { name: 'Sign in' }).click();
   await page.getByRole('button', { name: 'Sign in' }).click();
   await expect(page).toHaveURL(/dashboard/i);
